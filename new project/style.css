@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+}
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: rgba(0, 98, 163, 0.281);
+    flex-direction: column;
+}
+body .logo img{
+    max-width: 8rem;
+    min-height: 7rem;
+}
+body .text{
+    display: flex;
+    flex-direction: column; 
+     gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+body .text h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: orangered;
+}
+
+body .text h1{
+    color: rgba(0, 119, 255, 0.425);
+    font-size: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+body button{
+    width: 8rem;
+    min-height: 2.5rem;
+    border: none;
+    background-color: rgb(13, 126, 255);
+    text-transform: capitalize;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+body button:hover{
+    background-color: white;
+    transition: 0.5s ease;
+}
+body button a{
+    color: white;
+}
+body button a:hover{
+    color: orangered;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+@media (min-width: 0px) and (max-width: 480px){
+    body{
+        gap: 1rem;
+    }
+    body .text h4{
+        font-size: 1rem;  
+    }
+    body .text h1{
+        font-size: 2.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 480px) and (max-width: 908px){
+    body .text h1{
+        font-size: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
